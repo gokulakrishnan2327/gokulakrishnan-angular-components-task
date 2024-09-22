@@ -1,0 +1,170 @@
+/* Right Section for Reports */
+.right-section {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: -40px;
+  margin-left: -450px;
+}
+
+.course-evaluation{
+  font-weight: bold;
+  margin-left:-20px;
+margin-top: 20px;
+}
+.obe-report {
+  font-weight: bold;
+    margin-top: -40px;
+    margin-left: 1290px;
+    color: rgb(46,105,149);
+
+}
+/* Left Arrow Button */
+.back-button{
+  margin-left: -0px;
+  margin-top: -10px;
+  background-color: white;
+  width: 20px;
+
+}
+
+.peo-cards {
+  display: flex;
+  gap: 20px;
+
+  width: 1352px; /* Total width of the card container */
+}
+
+.peo-card {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 0px 8px; /* Adjust padding as needed */
+  width: 200px;
+  height: 35px; /* Card height */
+  position: relative;
+  border-radius: 10px; /* Rounded corners */
+  opacity: 0.8; /* Default opacity for all cards */
+  transition: opacity 0.3s; /* Smooth opacity transition */
+  margin-bottom: 20px;
+  padding: 18px;
+}
+
+.all {
+  background-color: white;
+  opacity: 1.2; /* Full opacity for the 'All' card */
+  width: 35px; /* Smaller width for 'All' card */
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+  font-weight: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+
+}
+.header1{
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.6;
+  font-size: small;
+  margin: -5px 0 5 0px;
+}
+
+.paper-icon {
+  position: absolute; /* Position it in the corner */
+  top: 10px; /* Adjust as necessary */
+  right: 10px; /* Adjust as necessary */
+  font-size: 24px; /* Adjust size */
+}
+
+
+
+.evaluation-bar {
+  height: 10px;
+  background-color: #eee;
+}
+
+.progress {
+  background-color: #4caf50;
+  height: 100%;
+}
+
+/* Additional styling for the PEO names */
+.peo-name {
+  font-family: 'YourProfessionalFont', sans-serif; /* Use a professional font */
+  font-size: 17px; /* Consistent size for all PEO names */
+  margin: 5px 0; /* Margin for spacing */
+}
+
+/* Tooltip styling with inverted curly brace-like triangle */
+.tooltip {
+  position: absolute;
+  background: rgba(255, 255, 255);
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 10px;
+  display: none;
+  z-index: 1;
+  bottom: -100px; /* Position the tooltip below the card */
+  left: 120%;
+  transform: translateX(-50%);
+  width: 190px; /* Adjust width as necessary */
+  text-align: center;
+}
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 10px;
+  border-style: solid;
+  background-color: rgba(255, 255, 255)  ;
+  /* border-color:   rgba(255, 255, 255) ; */
+}
+.description{
+  font-weight:bold;
+  text-align: left;
+}
+
+/* Show tooltip when hovering over the icon */
+.overlay-icon:hover .tooltip {
+  display: block;
+  background-color: rgba(255, 255, 255)  ;
+}
+
+/* External paper icon styling */
+.paper-icon {
+  font-size: 24px;
+  color: #000;
+  cursor: pointer;
+}
+
+/* Add hover effect */
+.peo-card:hover {
+  opacity: 1; /* Full opacity on hover */
+}
+
+/* Transition effect when clicking on cards */
+.peo-card.active {
+  transform: scale(1.1); /* Slight zoom effect */
+  transition: transform 0.3s ease-in-out;
+}
+
+.down-arrow {
+  width: 0;
+  height: 0;
+  /* border-bottom: 10px solid rgb(46,105,149); Highlight selected card with matching border color */
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgb(46,105,149); /* Color for the arrow */
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.peo-card.active {
+  border: 2px solid rgb(46,105,149); /* Highlight selected card with matching border color */
+}

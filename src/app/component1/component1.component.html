@@ -1,0 +1,27 @@
+<div class="evaluation-container">
+
+
+  <div class="course-details-card">
+    <h2><strong>Course Code</strong><br> <br><span class="light-text" style="gap: 20px;">{{ courseDetails?.courseCode }}</span></h2>
+    <p><strong>Course Name</strong><br><br> <span class="light-text">{{ courseDetails?.courseName }}</span></p>
+    <p><strong>Course Type</strong><br><br> <span class="light-text">{{ courseDetails?.courseType }}</span></p>
+    <p><strong>Course Period</strong><br><br> <span class="light-text">{{ courseDetails?.coursePeriod }}</span></p>
+    <p><strong>Credits</strong><br> <br><span class="light-text">Lecture - {{ courseDetails?.credits?.lecture }},<br><br> Practical - {{ courseDetails?.credits?.practical }},<br><br> Tutorial - {{ courseDetails?.credits?.tutorial }},<br><br> Project - {{ courseDetails?.credits?.project }}</span></p>
+
+    <div class="course-outcomes">
+      <h3>Course Outcomes (COs)</h3>
+      <ul>
+        <li *ngFor="let co of courseDetails?.courseOutcomes" class="outcome-item">{{ co }}</li>
+      </ul>
+    </div>
+
+    <div class="mapped-pos">
+      <h3>Mapped to this Course</h3>
+      <ul>
+        <li *ngFor="let po of courseDetails?.mappedPOs" class="po-item">{{ po }}</li>
+      </ul>
+    </div>
+  </div>
+
+
+</div>

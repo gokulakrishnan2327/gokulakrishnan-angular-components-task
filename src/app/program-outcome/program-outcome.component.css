@@ -1,0 +1,121 @@
+/* Program Outcomes Container */
+.program-outcomes {
+  width: 100%;
+  margin:  auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 50px;
+}
+.program{
+  width: 90%;
+  border-radius: 5px;
+  background-color: white;
+  padding: 10px 30px 10px 10px;
+  margin: -35px 20px 20px 18px  ;
+}
+.po-card {
+  width: 100%;
+  background: #f9f9f9;
+  border-bottom: 1px solid #ddd; 
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.po-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.po-title {
+  background-color: #2E6995;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-right: 15px;
+}
+
+.po-evalution {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-right: auto;
+}
+
+.po-body {
+  margin-top: 10px;
+}
+
+.po-skill {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.evaluation-bar {
+  width: 80%;
+  background-color: #eee;
+  height: 5px;
+  margin: 5px 0;
+  border-radius: 4px;
+}
+
+.progress {
+  background-color: #4caf50;
+  height: 70%;
+  border-radius: 4px;
+}
+
+.po-percentage {
+  display: block;
+  margin-top: -15px;
+  text-align: right;
+  font-size: 12px;
+}
+
+.dropdown-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-icon {
+  font-size: 16px;
+  opacity: 0.7;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+  background: #f9f9f9;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  margin-top: 10px;
+  font-size: 12px;
+  text-align: left; /* Align the text to the left */
+}
+
+/* Description and PEOs Mapped */
+.description {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.peos-mapped {
+  font-size: 14px;
+  color: #000;
+  font-weight: lighter; /* Bold and bigger font size */
+  margin-top: 10px;
+  text-align: left; /* Align left */
+}
+
+/* Separation Line */
+.po-card:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}

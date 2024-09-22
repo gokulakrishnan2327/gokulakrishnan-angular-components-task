@@ -1,0 +1,19 @@
+.attendance-progress {
+  margin: 45px 10px 20px 0px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.attendance-chart {
+  position: relative;
+  height: 200px;
+  width: 600px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}

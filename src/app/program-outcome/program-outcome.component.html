@@ -1,0 +1,34 @@
+<h4 class="program">Program Outcome</h4>
+
+<div class="program-outcomes">
+  <div class="po-card" *ngFor="let po of programOutcomes" [ngStyle]="{ 'background-color': po.isOpen ? 'rgb(235,244,248)' : '' }">
+    <div class="po-header">
+      <span class="po-title">{{ po.poname }}</span>
+      <span class="po-evalution">Evaluation: {{ po.evaluation }}</span>
+
+      <!-- Dropdown toggle icon -->
+      <button class="dropdown-toggle" (click)="toggleDropdown(po)">
+        <i class="toggle-icon" [ngClass]="po.isOpen ? 'fa-solid fa-angle-down' : 'fa-solid fa-chevron-up'"></i>
+      </button>
+    </div>
+
+    <div class="po-body">
+      <b class="el el-bold">
+        <span class="po-skill">{{ po.skillName }}</span>
+      </b>
+      <div class="evaluation-bar">
+        <div class="progress" [style.width.%]="po.percentage"></div>
+      </div>
+      <span class="po-percentage">{{ po.percentage }}%</span>
+    </div>
+
+    <div *ngIf="po.isOpen" class="dropdown-content">
+      <p class="description">
+        <strong  style="color: rgb(199,141,48);">Description</strong> <br> {{ po.description }}
+      </p>
+      <p class="peos-mapped">
+        <strong>PEOs Mapped</strong> <br>{{ po.peosMapped }}
+      </p>
+    </div>
+  </div>
+</div>

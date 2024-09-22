@@ -1,0 +1,26 @@
+<div class="assessment-summary">
+  <div class="summary-card1" *ngIf="assessmentProgress">
+    <p>Total Students &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{ assessmentProgress?.totalStudents }}</p>
+  </div>
+  <div class="summary-card2" *ngIf="assessmentProgress">
+    <p>Course Average Mark &nbsp;&nbsp;&nbsp; {{ assessmentProgress?.courseAverageMark }}</p>
+  </div>
+
+</div>
+<h4 class="assessment-title">Assessment Progress</h4>
+<div class="assessment-progress">
+  <div class="legend">
+    <div class="legend-item">
+      <span class="completed-box"></span>
+      <label>Completed</label>
+    </div>
+    <div class="legend-item">
+      <span class="pending-box"></span>
+      <label>Pending</label>
+    </div>
+  </div>
+  <div class="progress-chart">
+    <!-- Chart.js canvas for attendance chart -->
+    <canvas id="assessmentChart" width="600" height="200"></canvas>
+  </div>
+</div>

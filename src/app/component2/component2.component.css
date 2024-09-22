@@ -1,0 +1,82 @@
+.assessment-summary {
+  display: flex;
+  justify-content: left;
+  margin-left: 10px;
+}
+
+.assessment-title {
+  margin-left: 15px;
+  flex: auto;
+  flex-direction: row;
+  float: left;
+}
+
+.summary-card1 {
+  height: 50px;
+  background-color: rgb(214,217,221);
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-right: 1%;
+  color:rgb(44,56,75);
+  text-align: center;
+  width: 200px;
+}
+.summary-card2 {
+  height: 50px;
+  background-color: rgb(214,217,221);
+  border-radius: 10px;
+  font-size: 1rem;
+  color: rgb(44,56,75);
+  text-align: center;
+  margin-left: 1%;
+  width: 230px;
+}
+
+.assessment-progress {
+  margin: 45px 10px 20px 0px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.legend {
+  display: flex;
+  justify-content: center;
+  margin: -10px 20px 0px 0px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-right: 35px;
+  margin-top: 25px;
+}
+
+.completed-box {
+  width: 15px;
+  height: 15px;
+  background-color: rgb(145,176,124);
+  margin-right: 5px;
+}
+
+.pending-box {
+  width: 15px;
+  height: 15px;
+  background-color: rgb(255, 255, 255);  
+  margin-right: 5px;
+}
+
+.progress-chart {
+  position: relative;
+  height: 200px;
+  width: 600px;
+  margin-left: 10px;
+  margin-top: -10px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}

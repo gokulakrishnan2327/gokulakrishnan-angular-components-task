@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+<h3>Program Education Objective (PEOs)</h3>
+<div class="peo-cards">
+  <!-- All Filter Card -->
+  <div class="peo-card all">
+    <div class="header">
+      <span>All</span>
+
+    </div>
+  </div>
+
+  <!-- PEO-1 to PEO-5 Cards -->
+  <div class="peo-card" *ngFor="let peo of peos" (mouseenter)="showDetails(peo)" (mouseleave)="hideDetails(peo)">
+    <div class="header1">
+      <span>{{ peo.title }}</span>
+      <div class="overlay-icon">
+        <!-- External paper icon from Font Awesome -->
+        <i class="fas fa-file-alt paper-icon"></i>
+        <div *ngIf="peo.showDetails" class="tooltip">
+          <p style="color: rgb(208,167,98); font-weight: bolder; text-align: left; margin-top: 0px;">Description:,</p> <p class="description"><br>{{ peo.description }}</p>
+        </div>
+      </div>
+    </div>
+    <p class="peo-name">{{ peo.peoname }}</p>
+    <div *ngIf="selectedPeo === peo" class="down-arrow"></div>
+
+  </div>
+</div>
+
+<!-- Left Arrow Button -->
+<!-- <button class="back-button">&#8592;</button> -->
+<div class="back-button">
+<i class="fa-solid fa-chevron-left"  style="margin: 12px 200px -18px 345px; background-color: white; border-radius: 4px; border-color: skyblue;"></i>
+</div>
+<!-- OBE Report Section -->
+<div class="right-section">
+  <p class="course-evaluation">Course Evaluation Report</p>
+  <p class="obe-report">OBE Report</p>
+</div>
