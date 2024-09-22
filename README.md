@@ -16,9 +16,9 @@ This project includes three components based on the Figma design provided. The c
 
 ```bash
 ### Step 1: Clone the repository
-git clone https://github.com/gokulakrishnan2327/gokulakrishnan2327-angular-components-task.git
+git clone https://github.com/gokulakrishnan2327/gokulakrishnan-angular-components-task.git
 Step 2: Navigate to the project directory
-cd your-name-angular-components-task
+cd gokulakrishnan-angular-components-task
 Step 3: Install dependencies
 npm install
 Step 4: Run the application
